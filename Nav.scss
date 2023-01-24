@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik',sans-serif;
+}
+
+nav{
+    background-color:  #252525;
+    color: #fff;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-links{
+        flex: 1;
+        text-align: center;
+    } 
+
+        .nav-links ul li
+        {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;    
+        }
+      
+
+        .nav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        }
+
+   
+
+    body{
+        background-color:  #252525;
+    }
+
+    .NavLoginButton{
+        all: unset;
+        border: 2px solid;
+        border-radius: 100px;
+        cursor: pointer;
+        font-weight: 500;
+        padding: 12px 16px;
+        color: white;
+        margin: 0px 100px;
+        align-items: center;
+    }
+
+}
+
+
+  
+
