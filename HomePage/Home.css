@@ -1,0 +1,43 @@
+* {
+  background-color: #252525;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body .HomeFirstContainer .HomeFirst .ContainerLeft {
+  color: #fff;
+}
+body .HomeFirstContainer .HomeFirst .ContainerLeft h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+body .HomeFirstContainer .HomeFirst .ContainerLeft p {
+  font-size: 20px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+body .HomeFirstContainer .HomeFirst .ContainerLeft button {
+  all: unset;
+  background: #FF4E16;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: Rubik, sans-serif;
+  font-weight: 500;
+  min-width: 168px;
+  padding: 14px;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/*# sourceMappingURL=Home.css.map */
