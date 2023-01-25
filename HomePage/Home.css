@@ -1,14 +1,33 @@
 * {
-  background-color: #252525;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body .HomeFirstContainer {
+  background-color: #252525;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+body .HomeFirstContainer .HomeFirst {
+  display: flex;
+  padding: 40px 40px 0;
+  width: 1280px;
+}
 body .HomeFirstContainer .HomeFirst .ContainerLeft {
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
 }
-body .HomeFirstContainer .HomeFirst .ContainerLeft h1 {
+body .HomeFirstContainer .HomeFirst .ContainerLeft .HomeTitle {
+  font-size: 60px;
+  font-weight: 500;
+  font-family: "Rokkitt", serif;
+}
+body .HomeFirstContainer .HomeFirst .ContainerLeft .HomeTitle h1 {
   display: block;
   font-size: 2em;
   margin-block-start: 0.67em;
@@ -38,6 +57,25 @@ body .HomeFirstContainer .HomeFirst .ContainerLeft button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+body .HomeSecondContainer {
+  align-items: center;
+  background: #E3E3E3;
+  display: flex;
+  justify-content: center;
+}
+body .HomeSecondContainer .HomeSecond {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 50px 40px;
+  width: 1280px;
+}
+body .HomeSecondContainer .HomeSecond .HomeSecondTitle {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 /*# sourceMappingURL=Home.css.map */
