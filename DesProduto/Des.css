@@ -19,7 +19,6 @@ body .BookDetailsContainer .BookDetails .BookDTitle {
   border: 1px solid red;
   align-items: center;
   display: flex;
-  font-family: var(--rokkitt);
   font-size: 20px;
   font-weight: 500;
 }

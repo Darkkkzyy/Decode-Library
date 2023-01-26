@@ -3,14 +3,14 @@ body {
 
   .BookDetailsContainer {
     border: 1px solid red;
-
+   
     align-items: center;
     display: flex;
     flex-direction: column;
 
     .BookDetails {
       border: 1px solid red;
-
+      
       display: flex;
       flex-direction: column;
       gap: 50px;
@@ -22,7 +22,6 @@ body {
 
         align-items: center;
         display: flex;
-        font-family: var(--rokkitt);
         font-size: 20px;
         font-weight: 500;
 
@@ -41,12 +40,13 @@ body {
 
       .BookSContainer {
         border: 1px solid red;
+      
         display: flex;
         gap: 50px;
 
         .BookInteract {
           border: 1px solid red;
-
+        
           align-items: flex-start;
           display: flex;
           gap: 24px;
@@ -141,7 +141,7 @@ body {
                     border: 1px solid red;
 
                    
-                    
+          
                 }
 
                 .BookDisponibilidadeSub{

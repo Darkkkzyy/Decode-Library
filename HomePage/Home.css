@@ -19,6 +19,9 @@ body .HomeFirstContainer .HomeFirst {
   body .HomeFirstContainer .HomeFirst {
     flex-direction: column;
   }
+  body .HomeFirstContainer .HomeFirst img {
+    display: block;
+  }
 }
 body .HomeFirstContainer .HomeFirst .ContainerRight {
   display: flex;
