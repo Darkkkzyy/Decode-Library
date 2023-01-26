@@ -1,60 +1,58 @@
 * {
-    background-color: #252525;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  background-color: #252525;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.container1 {
-    align-items: center;
+.container1 { 
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+
+  .aboutUs {
     display: flex;
     flex-direction: column;
-    padding-top: 0;
+    padding: 0 40px 40px;
 
-    .aboutUs {
+    h1 {
+      color: #fff;
+      font-size: 55px;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
+      font-weight: bold;
+    }
+
+    .aboutUsText {
+      border: 1px solid red;
+      @media only screen and (max-width: 1000px) {
+        flex-direction: column;
+      }
+      display: flex;
+      justify-content: space-between;
+
+      .aboutLeft {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        gap: 15px;
+        max-width: 648px;
+
+        p {
+          font-size: 18px;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          color: #fff;
+        }
+      }
+
+      .aboutRight {
         display: flex;
         flex-direction: column;
         gap: 40px;
-        padding: 0 40px 40px;
-        width: 1280px;
-
-        h1 {
-            color: #fff;
-            font-size: 55px;
-            margin-block-start: 0.67em;
-            margin-block-end: 0.67em;
-            font-weight: bold;
-        }
-
-        .aboutUsText {
-            display: flex;
-            justify-content: space-between;
-
-            .aboutLeft {
-                display: flex;
-                flex-direction: column;
-                font-size: 16px;
-                gap: 15px;
-                max-width: 648px;
-
-
-
-                p {
-                    font-size: 18px;
-                    margin-block-start: 1em;
-                    margin-block-end: 1em;
-                    color: #fff;
-                }
-            }
-
-
-            .aboutRight {
-                display: flex;
-                flex-direction: column;
-                gap: 40px;
-                max-width: 551px;
-                width: 50%;
-            }
-        }
+        width: 50%;
+      }
     }
+  }
 }
