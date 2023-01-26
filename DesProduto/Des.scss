@@ -1,0 +1,157 @@
+body {
+  background-color: #252525;
+
+  .BookDetailsContainer {
+    border: 1px solid red;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .BookDetails {
+      border: 1px solid red;
+
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      padding: 0 40px 40px;
+      width: 1280px;
+
+      .BookDTitle {
+        border: 1px solid red;
+
+        align-items: center;
+        display: flex;
+        font-family: var(--rokkitt);
+        font-size: 20px;
+        font-weight: 500;
+
+        .BookTitleLibrary {
+          color: #ff4e16;
+          cursor: pointer;
+        }
+
+        .BookTitleDetails {
+          color: #fff;
+          display: block;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+        }
+      }
+
+      .BookSContainer {
+        border: 1px solid red;
+        display: flex;
+        gap: 50px;
+
+        .BookInteract {
+          border: 1px solid red;
+
+          align-items: flex-start;
+          display: flex;
+          gap: 24px;
+
+          .BookCover {
+            border: 1px solid red;
+          }
+
+          .BookInteraction {
+            border: 1px solid red;
+
+            color: #fff;
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            font-family: "Rubik", sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            gap: 20px;
+
+            .BookInteractLike {
+              align-items: center;
+              display: flex;
+              gap: 8px;
+            }
+
+            .BookInteractDislike {
+              align-items: center;
+              display: flex;
+              gap: 8px;
+            }
+          }
+        }
+
+        .BookDescriptionContainer {
+            border: 1px solid red;
+
+            display: flex;
+            flex-direction: column;
+            .BookDescriptionTitle{
+                border: 1px solid red;
+
+                color: #fff;
+                font-family: "Rubik",sans-serif;
+                font-size: 40px;
+                font-weight: 500;
+                max-width: 650px;
+            }
+
+            .BooKDesAut{
+                border: 1px solid red;
+
+                align-items: center;
+                display: flex;
+                font-family: "Rubik",sans-serif;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 400;
+                
+                .Dot{
+                    margin: 10px;
+                }
+                .SubAutTitle{
+                    color: rgb(170, 170, 170);
+                }
+            }
+
+            .BookEditora{
+                border: 1px solid red;
+
+                font-family:"Rubik",sans-serif;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            .BookPrice{
+                border: 1px solid red;
+
+                color: #ff4e16;
+                font-family: "Rubik",sans-serif;
+                font-size: 28px;
+                font-weight: 500;
+            }
+
+            .BookDisponibilidade{
+                border: 1px solid red;
+                color: #fff;
+                font-weight: 500;
+
+                .BookDisponibilidadeTitle{
+                    border: 1px solid red;
+
+                   
+                    
+                }
+
+                .BookDisponibilidadeSub{
+                    border: 1px solid red;
+
+                    font-size: 12px;
+                }
+            }
+        }
+      }
+    }
+  }
+}

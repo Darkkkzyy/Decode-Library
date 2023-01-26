@@ -1,0 +1,126 @@
+body {
+  background-color: #252525;
+}
+body .BookDetailsContainer {
+  border: 1px solid red;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+body .BookDetailsContainer .BookDetails {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0 40px 40px;
+  width: 1280px;
+}
+body .BookDetailsContainer .BookDetails .BookDTitle {
+  border: 1px solid red;
+  align-items: center;
+  display: flex;
+  font-family: var(--rokkitt);
+  font-size: 20px;
+  font-weight: 500;
+}
+body .BookDetailsContainer .BookDetails .BookDTitle .BookTitleLibrary {
+  color: #ff4e16;
+  cursor: pointer;
+}
+body .BookDetailsContainer .BookDetails .BookDTitle .BookTitleDetails {
+  color: #fff;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer {
+  border: 1px solid red;
+  display: flex;
+  gap: 50px;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract {
+  border: 1px solid red;
+  align-items: flex-start;
+  display: flex;
+  gap: 24px;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookCover {
+  border: 1px solid red;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookInteraction {
+  border: 1px solid red;
+  color: #fff;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  gap: 20px;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookInteraction .BookInteractLike {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookInteraction .BookInteractDislike {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookDescriptionTitle {
+  border: 1px solid red;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  max-width: 650px;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BooKDesAut {
+  border: 1px solid red;
+  align-items: center;
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BooKDesAut .Dot {
+  margin: 10px;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BooKDesAut .SubAutTitle {
+  color: rgb(170, 170, 170);
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookEditora {
+  border: 1px solid red;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookPrice {
+  border: 1px solid red;
+  color: #ff4e16;
+  font-family: "Rubik", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookDisponibilidade {
+  border: 1px solid red;
+  color: #fff;
+  font-weight: 500;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookDisponibilidade .BookDisponibilidadeTitle {
+  border: 1px solid red;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookDisponibilidade .BookDisponibilidadeSub {
+  border: 1px solid red;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=Des.css.map */
