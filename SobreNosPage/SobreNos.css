@@ -24,7 +24,6 @@
   font-weight: bold;
 }
 .container1 .aboutUs .aboutUsText {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
 }
