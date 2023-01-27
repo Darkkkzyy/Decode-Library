@@ -15,12 +15,26 @@ body .BookDetailsContainer .BookDetails {
   padding: 0 40px 40px;
   width: 1280px;
 }
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails {
+    width: 600px;
+  }
+}
 body .BookDetailsContainer .BookDetails .BookDTitle {
   border: 1px solid red;
   align-items: center;
   display: flex;
   font-size: 20px;
   font-weight: 500;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookDTitle {
+    justify-content: center;
+    align-items: center;
+  }
+  body .BookDetailsContainer .BookDetails .BookDTitle .BookTitleDetails {
+    flex-direction: column;
+  }
 }
 body .BookDetailsContainer .BookDetails .BookDTitle .BookTitleLibrary {
   color: #ff4e16;
@@ -36,6 +50,13 @@ body .BookDetailsContainer .BookDetails .BookSContainer {
   border: 1px solid red;
   display: flex;
   gap: 50px;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract {
   border: 1px solid red;
