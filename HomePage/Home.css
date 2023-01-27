@@ -5,22 +5,26 @@
 }
 
 body .HomeFirstContainer {
-  background-color: #252525;
+  background-color: #252525 !important;
   align-items: center;
   display: flex;
   justify-content: center;
 }
 body .HomeFirstContainer .HomeFirst {
   display: flex;
-  padding: 40px 40px 0;
   width: 1280px;
 }
 @media only screen and (max-width: 1000px) {
   body .HomeFirstContainer .HomeFirst {
     flex-direction: column;
+    width: 375px;
   }
   body .HomeFirstContainer .HomeFirst img {
-    display: block;
+    display: none;
+  }
+  body .HomeFirstContainer .HomeFirst h1 {
+    font-size: 54px !important;
+    margin-top: 60px;
   }
 }
 body .HomeFirstContainer .HomeFirst .ContainerRight {
@@ -34,6 +38,16 @@ body .HomeFirstContainer .HomeFirst .ContainerLeft {
   flex-direction: column;
   gap: 40px;
   justify-content: center;
+}
+@media only screen and (max-width: 1000px) {
+  body .HomeFirstContainer .HomeFirst .ContainerLeft .ContainerLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .HomeFirstContainer .HomeFirst .ContainerLeft .ContainerLeft h1 {
+    width: 343px;
+  }
 }
 body .HomeFirstContainer .HomeFirst .ContainerLeft .HomeTitle {
   font-size: 60px;
@@ -52,8 +66,6 @@ body .HomeFirstContainer .HomeFirst .ContainerLeft p {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 body .HomeFirstContainer .HomeFirst .ContainerLeft button {
   all: unset;
@@ -65,8 +77,6 @@ body .HomeFirstContainer .HomeFirst .ContainerLeft button {
   min-width: 168px;
   padding: 14px;
   text-align: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 body .HomeSecondContainer {
@@ -113,6 +123,32 @@ body .HomeSecondContainer .HomeBookContainer .HomeBook {
   flex-direction: row;
   gap: 12px;
 }
+body .HomeSecondContainer .HomeBookContainer .HomeBook .Container1 {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1000px) {
+  body .HomeSecondContainer .HomeBookContainer .HomeBook .Container1 {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+body .HomeSecondContainer .HomeBookContainer .HomeBook .Container2 {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1000px) {
+  body .HomeSecondContainer .HomeBookContainer .HomeBook .Container2 {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
 body .HomeSecondContainer .HomeBookContainer .HomeBook .HomeBookDescription {
   color: #000;
   display: flex;
@@ -143,12 +179,31 @@ body footer .HomeFooter {
   padding: 50px 40px 0;
   width: 1280px;
 }
+@media only screen and (max-width: 1000px) {
+  body footer .HomeFooter {
+    flex-direction: column;
+  }
+  body footer .HomeFooter img {
+    margin-top: 72px;
+  }
+}
 body footer .HomeFooter .FooterCotainerLeft {
-  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 20px;
   color: #fff;
+}
+@media only screen and (max-width: 1000px) {
+  body footer .HomeFooter .FooterCotainerLeft .Btn {
+    display: flex;
+    flex-direction: column;
+  }
+  body footer .HomeFooter .FooterCotainerLeft .Btn button {
+    width: 250px;
+    margin-top: 24px;
+  }
 }
 body footer .HomeFooter .FooterCotainerLeft h1 {
   size: 40px;
