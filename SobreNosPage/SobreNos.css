@@ -1,55 +1,17 @@
-* {
-  background-color: #252525;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* Error: expected "}".
+ *    ,
+ * 72 | }
+ *    |  ^
+ *    '
+ *   SobreNos.scss 72:2  root stylesheet */
 
-.container1 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding-top: 0;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "}".\a    \2577 \a 72 \2502  }\d\a    \2502   ^\a    \2575 \a   SobreNos.scss 72:2  root stylesheet';
 }
-.container1 .aboutUs {
-  display: flex;
-  flex-direction: column;
-  padding: 0 40px 40px;
-}
-.container1 .aboutUs h1 {
-  color: #fff;
-  font-size: 55px;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  font-weight: bold;
-}
-.container1 .aboutUs .aboutUsText {
-  display: flex;
-  justify-content: space-between;
-}
-@media only screen and (max-width: 1000px) {
-  .container1 .aboutUs .aboutUsText {
-    flex-direction: column;
-  }
-}
-.container1 .aboutUs .aboutUsText .aboutLeft {
-  display: flex;
-  flex-direction: column;
-  font-size: 16px;
-  gap: 15px;
-  max-width: 648px;
-}
-.container1 .aboutUs .aboutUsText .aboutLeft p {
-  font-size: 18px;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  color: #fff;
-}
-.container1 .aboutUs .aboutUsText .aboutRight {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  width: 50%;
-}
-
-/*# sourceMappingURL=SobreNos.css.map */
