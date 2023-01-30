@@ -90,10 +90,10 @@ body .HomeSecondContainer {
     flex-direction: column;
   }
   body .HomeSecondContainer img {
-    width: 80%;
+    width: 100%;
   }
   body .HomeSecondContainer p {
-    font-size: 8px;
+    font-size: 16px;
   }
 }
 body .HomeSecondContainer .HomeSecond {
@@ -105,6 +105,7 @@ body .HomeSecondContainer .HomeSecond {
 @media only screen and (max-width: 1000px) {
   body .HomeSecondContainer .HomeSecond {
     flex-direction: column;
+    padding: 30px 20px;
   }
 }
 body .HomeSecondContainer .HomeSecond .HomeSecondTitle {
@@ -169,19 +170,28 @@ body footer {
   font-family: "Rokkitt", serif;
   justify-content: center;
   padding-top: 50px;
+  padding-bottom: 20px;
   background-color: #252525;
+}
+@media only screen and (max-width: 1000px) {
+  body footer {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 body footer .HomeFooter {
   align-items: center;
   display: flex;
   gap: 60px;
   justify-content: space-between;
-  padding: 50px 40px 0;
+  padding: 0px 40px;
   width: 1280px;
 }
 @media only screen and (max-width: 1000px) {
   body footer .HomeFooter {
     flex-direction: column;
+    padding: 50px 0px;
+    gap: 0px;
   }
   body footer .HomeFooter img {
     margin-top: 72px;
@@ -201,29 +211,48 @@ body footer .HomeFooter .FooterCotainerLeft {
     flex-direction: column;
   }
   body footer .HomeFooter .FooterCotainerLeft .Btn button {
-    width: 250px;
+    width: 326px;
     margin-top: 24px;
   }
 }
 body footer .HomeFooter .FooterCotainerLeft h1 {
   size: 40px;
+  align-self: flex-start;
 }
-body footer .HomeFooter .FooterCotainerLeft .FooterEmail {
+body footer .HomeFooter .FooterCotainerLeft p {
+  align-self: flex-start;
+}
+@media only screen and (max-width: 1000px) {
+  body footer .HomeFooter .FooterCotainerLeft .Btn {
+    width: 100% !important;
+  }
+  body footer .HomeFooter .FooterCotainerLeft .Btn .FooterEmail {
+    margin-bottom: 24px !important;
+    width: 326px !important;
+  }
+  body footer .HomeFooter .FooterCotainerLeft .Btn .FooterButton {
+    width: 326px !important;
+  }
+}
+body footer .HomeFooter .FooterCotainerLeft .Btn .FooterEmail {
+  align-self: flex-start;
   all: unset;
   background: white;
   border-radius: 100px;
   color: #000;
   padding: 10px 10px 10px 20px;
-  width: 220px;
+  width: 360px;
+  margin-right: 10px;
 }
-body footer .HomeFooter .FooterCotainerLeft .FooterButton {
+body footer .HomeFooter .FooterCotainerLeft .Btn .FooterButton {
+  align-self: flex-start;
   all: unset;
   background: orangered;
   border-radius: 100px;
   cursor: pointer;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  min-width: 168px;
+  width: 168px;
   padding: 14px;
   text-align: center;
   width: fit-content;
