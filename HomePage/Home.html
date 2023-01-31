@@ -6,10 +6,21 @@
       <link rel="stylesheet" href="../Nav/Nav.css" />
       <link rel="stylesheet" href="../HomePage/Home.css" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <script src="../HomePage/submit.js" defer></script>
     </section>
   </head>
 
   <body>
+    <div class="modalContainer">
+      <div class="modal">
+        <h1>Inscrição Feita</h1>
+        <p>Irá receber as nossas novidades no seu email.</p>
+        <a class="ContainerBtnVoltar">
+          <button onclick="voltar()" class="BtnVoltar">Voltar</button>
+        </a>
+      </div>
+    </div>
+
     <div class="HomeFirstContainer">
       <div class="HomeFirst">
         <div class="ContainerLeft">
@@ -74,11 +85,20 @@
         <p>Veja os novos livros que apareceram!</p>
         <div class="Btn">
           <input
-            type="email"
+            type="text"
+            id="email"
             placeholder="Email"
             class="FooterEmail"
-            value=""/>
-          <button type="submit" class="FooterButton" style="width: 168px;">Inscrever</button>
+            value=""
+          />
+          <button
+            onclick="validate()"
+            type="submit"
+            class="FooterButton"
+            style="width: 168px"
+          >
+            Inscrever
+          </button>
         </div>
       </div>
       <img src="../images/Footer.png" />
