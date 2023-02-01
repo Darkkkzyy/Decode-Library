@@ -1,69 +1,11 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: #252525;
-  .modalOrder {
-    align-items: center;
-    background: rgba(0, 0, 0, 0.75);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-    z-index: 15;
-
-    .modal {
-      background: #252525;
-      border-radius: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      max-width: 900px;
-      padding: 50px;
-      width: 100%;
-
-      .OrderTitle {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        h1 {
-          font-size: 28px;
-          font-weight: 500;
-        }
-      }
-      .OrderBook {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-
-        .OrderDropDown {
-          display: inline-block;
-          position: relative;
-
-          .OrderBookButton {
-            align-items: center;
-            background-color: #fff;
-            border: 1.5px solid transparent;
-            border-radius: 20px;
-            color: #252525;
-            cursor: pointer;
-            display: flex;
-            font-size: 16px;
-            justify-content: space-between;
-            padding: 12px 20px;
-            text-align: start;
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
 
   .BookDetailsContainer {
     align-items: center;
@@ -118,9 +60,6 @@ body {
           align-items: flex-start;
           display: flex;
           gap: 24px;
-
-          .BookCover {
-          }
 
           .BookInteraction {
             color: #fff;
