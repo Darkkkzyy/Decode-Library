@@ -1,9 +1,65 @@
 * {
-  border: 1px solid red;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: #252525;
+}
+body .modalOrder {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 15;
+}
+body .modalOrder .modal {
+  background: #252525;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  padding: 50px;
+  width: 100%;
+}
+body .modalOrder .modal .OrderTitle {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+body .modalOrder .modal .OrderTitle h1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+body .modalOrder .modal .OrderBook {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+body .modalOrder .modal .OrderBook .OrderDropDown {
+  display: inline-block;
+  position: relative;
+}
+body .modalOrder .modal .OrderBook .OrderDropDown .OrderBookButton {
+  align-items: center;
+  background-color: #fff;
+  border: 1.5px solid transparent;
+  border-radius: 20px;
+  color: #252525;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+  padding: 12px 20px;
+  text-align: start;
+  width: 100%;
 }
 body .BookDetailsContainer {
   align-items: center;
@@ -44,8 +100,6 @@ body .BookDetailsContainer .BookDetails .BookDTitle .BookTitleLibrary {
 body .BookDetailsContainer .BookDetails .BookDTitle .BookTitleDetails {
   color: #fff;
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
 }
 body .BookDetailsContainer .BookDetails .BookSContainer {
   display: flex;
@@ -93,6 +147,21 @@ body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContaine
   font-size: 40px;
   font-weight: 500;
   max-width: 650px;
+  margin-block-start: 0px;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .Btn {
+  color: #fff;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .Btn .BtnRequesitar {
+  all: unset;
+  background: orangered;
+  border-radius: 100px;
+  cursor: pointer;
+  font-weight: 500;
+  min-width: 168px;
+  padding: 14px;
+  text-align: center;
+  width: fit-content;
 }
 body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BooKDesAut {
   align-items: center;
@@ -124,8 +193,5 @@ body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContaine
   color: #fff;
   font-weight: 500;
 }
-body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookDisponibilidade .BookDisponibilidadeSub {
-  font-size: 12px;
-}
 
-/*# sourceMappingURL=Des.css.map */
+/*# sourceMappingURL=DesAva.css.map */

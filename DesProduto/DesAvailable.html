@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="Des.css" />
+    <link rel="stylesheet" href="DesAva.css" />
     <link href="Rubik" ,sans-serif rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="../HomePage/submit.js" defer></script>
-
+    
   </head>
   <body>
+    <div class="modalOrder">
+        <div class="modal">
+        <div class="OrderTitle">
+          <h1>Requesitar Livro</h1>
+          <img src="../images/x-circle.png" alt="closeFigure">
+        </div>
+        <div class="OrderBook"></div>
+            <div class="OrderDropDown">
+                <button class="OrderBookButton"></button>
+            </div>
+        </div>
+      </div>
 
     <div class="BookDetailsContainer">
       <div class="BookDetails">
         <div class="BookDTitle">
           <p class="BookTitleLibrary">A nossa biblioteca</p>
           <img src="../images/seta.png" alt="" />
-          <p class="BookTitleDetails">War & Peace</p>
+          <p class="BookTitleDetails">A Powerful Path</p>
         </div>
         <div class="BookSContainer">
           <div class="BookInteract">
-            <img src="../images/Livro1.png" alt="BookCover" class="BookCover" />
+            <img src="../images/Livro3.png" alt="BookCover" class="BookCover" />
 
             <div class="BookInteraction">
               <img src="../images/heart.png" alt="BookInteractHeart" />
@@ -33,17 +45,18 @@
             </div>
           </div>
           <div class="BookDescriptionContainer">
-            <h1 class="BookDescriptionTitle">War & Peace</h1>  
+            <h1 class="BookDescriptionTitle">A Powerful Path</h1>  
             <div class="BooKDesAut">
-                <p>Leo Tolstoy </p>
+                <p>Haven Obrien </p>
                 <img src="../images/dot.png" alt="DesDot" class="Dot">
-                <p class="SubAutTitle"> Outros</p>
+                <p class="SubAutTitle"> Engenharia</p>
             </div>              
-            <p class="BookEditora">Editora: Oxford University Press</p>
-            <h1 class="BookPrice">2€/semana</h1>
-            <div class="BookDisponibilidade">
-                <p class="BookDisponibilidadeTitle">Indisponível</p>
-                <p class="BookDisponibilidadeSub"> Este livro já foi requisitado ou já não está na nossa biblioteca.</p>
+            <p class="BookEditora">Editora: Triple Fascination</p>
+            <h1 class="BookPrice">1,5€/semana</h1>
+            <div class="Btn">
+                <button  onclick="Requesitar()" type="submit" class="BtnRequesitar">
+                    Requesitar
+                </button>
             </div>
             </div>
           </div>

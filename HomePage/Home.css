@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-body .modalContainer {
+body .modalContainerInscricao {
   align-items: center;
   background: rgba(0, 0, 0, 0.75);
   display: none;
@@ -15,7 +15,7 @@ body .modalContainer {
   width: 100%;
   z-index: 15;
 }
-body .modalContainer .modal {
+body .modalContainerInscricao .modal {
   background: #252525;
   border-radius: 20px;
   display: flex;
@@ -25,17 +25,17 @@ body .modalContainer .modal {
   padding: 50px;
   color: #fff;
 }
-body .modalContainer .modal h1 {
+body .modalContainerInscricao .modal h1 {
   font-size: 28px;
 }
-body .modalContainer .modal p {
+body .modalContainerInscricao .modal p {
   font-size: 20px;
 }
-body .modalContainer .modal .ContainerBtnVoltar {
+body .modalContainerInscricao .modal .ContainerBtnVoltar {
   display: flex;
   justify-content: center;
 }
-body .modalContainer .modal .ContainerBtnVoltar .BtnVoltar {
+body .modalContainerInscricao .modal .ContainerBtnVoltar .BtnVoltar {
   all: unset;
   background: orangered;
   border-radius: 100px;
