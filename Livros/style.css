@@ -1,0 +1,722 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(53, 53, 53);
+  font-family: Arial, Helvetica, sans-serif;
+}
+body nav {
+  background-color: rgb(65, 65, 65);
+  color: rgb(165, 165, 165);
+  padding: 0 15px;
+  height: 75px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+body nav .button {
+  height: 25px;
+  width: 25px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+@media (min-width: 700px) {
+  body nav .button {
+    display: none !important;
+  }
+}
+body nav .button:hover {
+  background-color: rgb(0, 0, 0);
+}
+body nav .button li {
+  height: 5px;
+  width: 100%;
+  background-color: rgb(156, 156, 156) !important;
+  border-radius: 4px;
+  transition: 0.3;
+}
+body nav .menu {
+  background: #ddd;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  text-align: right;
+  flex-direction: column;
+  display: none;
+}
+@media (min-width: 700px) {
+  body nav .menu {
+    display: flex !important;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    padding: 0;
+    background: none;
+  }
+  body nav .menu li:not(:nth-last-child(1)) {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+body nav .menu li:not(:nth-last-child(1)) {
+  margin-bottom: 15px;
+}
+body nav li {
+  list-style: none;
+}
+body nav li:hover {
+  transition: 0.5;
+}
+body nav li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+body nav li :hover {
+  text-decoration: underline;
+}
+
+* {
+  font-family: "Rokkitt", serif;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #252525 !important;
+}
+body .modalContainer {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 15;
+}
+body .modalContainer .modal {
+  background: #252525;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-width: 600px;
+  padding: 50px;
+  color: #fff;
+}
+body .modalContainer .modal h1 {
+  font-size: 28px;
+}
+body .modalContainer .modal p {
+  font-size: 20px;
+}
+body .modalContainer .modal .ContainerBtnVoltar {
+  display: flex;
+  justify-content: center;
+}
+body .modalContainer .modal .ContainerBtnVoltar .BtnVoltar {
+  all: unset;
+  background: orangered;
+  border-radius: 100px;
+  cursor: pointer;
+  font-weight: 500;
+  min-width: 168px;
+  padding: 14px;
+  text-align: center;
+}
+body nav {
+  background-color: rgb(65, 65, 65);
+  color: rgb(165, 165, 165);
+  padding: 0 15px;
+  height: 75px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+body nav .button {
+  height: 25px;
+  width: 25px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+@media (min-width: 700px) {
+  body nav .button {
+    display: none !important;
+  }
+}
+body nav .button:hover {
+  background-color: rgb(0, 0, 0);
+}
+body nav .button li {
+  height: 5px;
+  width: 100%;
+  background-color: rgb(156, 156, 156) !important;
+  border-radius: 4px;
+  transition: 0.3;
+}
+body nav .menu {
+  background: #ddd;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  text-align: right;
+  flex-direction: column;
+  display: none;
+  margin-right: 200px;
+  justify-content: space-between;
+  width: 40%;
+}
+@media (max-width: 700px) {
+  body nav .menu {
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+}
+@media (min-width: 700px) {
+  body nav .menu {
+    display: flex !important;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    padding: 0;
+    background: none;
+    justify-content: space-between;
+  }
+  body nav .menu li:not(:nth-last-child(1)) {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+body nav .menu li:not(:nth-last-child(1)) {
+  margin-bottom: 15px;
+}
+body nav li {
+  list-style: none;
+}
+body nav li:hover {
+  transition: 0.5;
+}
+body nav li a {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+body nav li :hover {
+  text-decoration: underline;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  display: flex;
+  gap: 145px;
+}
+@media only screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+.container input {
+  background-color: #FFFFFF;
+}
+.container .login1Left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 50%;
+  border: 1px solid red;
+  height: 80%;
+}
+@media only screen and (max-width: 1000px) {
+  .container .login1Left {
+    display: none;
+  }
+}
+.container .login1Left p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #e3e3e3;
+}
+.container .login1Left h6 {
+  font-weight: 700;
+  font-size: 14px;
+  color: #e3e3e3;
+}
+.container .login1Left h1 {
+  font-family: Rokkitt;
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.container .login2Right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+  height: 80%;
+  border: 1px solid red;
+}
+.container .login2Right .inputs {
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+.container .login2Right .inputs input {
+  margin: 10px 0;
+  width: 100%;
+}
+@media only screen and (max-width: 1000px) {
+  .container .login2Right {
+    margin-top: 50px;
+    width: 85%;
+    padding: 10px;
+  }
+  .container .login2Right .register {
+    width: 50% !important;
+    padding: 10px;
+  }
+}
+.container .login2Right .newsLetter {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  width: 100%;
+}
+.container .login2Right .newsLetter p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #E3E3E3;
+  margin: 0;
+}
+.container .login2Right .newsLetter input {
+  accent-color: #FF4E16;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.container .login2Right .newsLetter input::before {
+  height: auto;
+}
+.container .login2Right .text, .container .login2Right .register {
+  width: 360px;
+  height: 46px;
+  border-radius: 100px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.container .login2Right .text::placeholder, .container .login2Right .register::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #aaaaaa;
+  padding: 24px;
+}
+.container .login2Right .registrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+}
+.container .login2Right .registrar a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.container .login2Right .register {
+  background-color: #FF4E16;
+  color: white;
+  border: none;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.container .login2Right h2 {
+  width: 100%;
+  justify-self: flex-start;
+  font-weight: 500;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+.container .login2Right .socialMedia {
+  display: flex;
+  gap: 18px;
+  color: #FFFFFF;
+}
+.container .login2Right .socialMedia button {
+  border-radius: 100px;
+  width: 105px;
+  height: 43px;
+  display: inline;
+  background: white;
+  cursor: pointer;
+}
+.container .login2Right .socialMedia img {
+  background-color: white;
+}
+.container .login2Right .line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container .login2Right .line hr {
+  border: 1px solid gray;
+  width: 80% !important;
+}
+.container .login2Right .contaLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 3px white;
+  color: white;
+  border-radius: 100px;
+  height: 43px;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+}
+
+body {
+  font-family: "Rubik";
+  font-style: normal;
+}
+body .modalContainer {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+}
+body .modalContainer .modal {
+  background: #252525;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  min-width: 600px;
+  padding: 50px;
+  color: #fff;
+}
+body .modalContainer .modal input {
+  width: 100%;
+  height: 46px;
+  border-radius: 100px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px;
+}
+body .modalContainer .modal h1 {
+  font-size: 28px;
+  align-self: baseline;
+}
+body .modalContainer .modal p {
+  font-size: 20px;
+}
+body .modalContainer .modal .ContainerBtnVoltar {
+  display: flex;
+  justify-content: center;
+}
+body .modalContainer .modal .ContainerBtnVoltar .BtnVoltar {
+  all: unset;
+  background: orangered;
+  border-radius: 100px;
+  cursor: pointer;
+  font-weight: 500;
+  min-width: 168px;
+  padding: 14px;
+  text-align: center;
+}
+body .Container {
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid red;
+}
+body .Container nav {
+  background-color: rgb(65, 65, 65);
+  color: rgb(165, 165, 165);
+  padding: 0 15px;
+  height: 75px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+body .Container nav .button {
+  height: 25px;
+  width: 25px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+@media (min-width: 700px) {
+  body .Container nav .button {
+    display: none !important;
+  }
+}
+body .Container nav .button:hover {
+  background-color: rgb(0, 0, 0);
+}
+body .Container nav .button li {
+  height: 5px;
+  width: 100%;
+  background-color: rgb(156, 156, 156) !important;
+  border-radius: 4px;
+  transition: 0.3;
+}
+body .Container nav .menu {
+  background: #ddd;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  text-align: right;
+  flex-direction: column;
+  display: none;
+  margin-right: 200px;
+  justify-content: space-between;
+  width: 40%;
+}
+@media (max-width: 700px) {
+  body .Container nav .menu {
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+}
+@media (min-width: 700px) {
+  body .Container nav .menu {
+    display: flex !important;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    padding: 0;
+    background: none;
+    justify-content: space-between;
+  }
+  body .Container nav .menu li:not(:nth-last-child(1)) {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+body .Container nav .menu li:not(:nth-last-child(1)) {
+  margin-bottom: 15px;
+}
+body .Container nav li {
+  list-style: none;
+}
+body .Container nav li:hover {
+  transition: 0.5;
+}
+body .Container nav li a {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+body .Container nav li :hover {
+  text-decoration: underline;
+}
+body .Container .newBookButton {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 40px;
+}
+@media only screen and (min-width: 800px) {
+  body .Container .newBookButton {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  body .Container .newBookButton .contaLogin {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border: solid 3px white;
+    background-color: #252525;
+    color: white;
+    border-radius: 100px;
+    height: 43px;
+    width: 300px;
+    text-decoration: none;
+    padding: 10px;
+  }
+  body .Container .newBookButton .contaLogin img {
+    width: 10%;
+    background: white;
+  }
+}
+body .Container h1 {
+  font-weight: 500;
+  font-size: 60px;
+  color: #ffffff;
+}
+body .Container .Library_pagination {
+  align-items: center;
+  align-self: center;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  color: white;
+}
+body .Container .Library_pagination .Library_pagination:hover {
+  background-color: #FF4E16;
+}
+body .Container .Library_books-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body .Container .Library_books-list img {
+  height: 381px;
+  width: 264px;
+}
+body .Container .Library_books-list .author {
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+body .Container .Library_books-list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+body .Container .Library_books-list .price {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ff4e16;
+}
+@media only screen and (max-width: 800px) {
+  body .Container .Library_books-list .Library_new-book {
+    display: none !important;
+  }
+}
+body .Container .Library_books-list .Library_new-book .addBook {
+  color: white;
+}
+body .Container .Library_books-list .Library_new-book .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+}
+body .Container .Library_books-list .Library_book, body .Container .Library_books-list .Library_new-book {
+  border: 1px solid blue;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 15px;
+}
+@media only screen and (max-width: 800px) {
+  body .Container .Library_books-list .Library_book .h1, body .Container .Library_books-list .Library_new-book .h1 {
+    font-size: 277px;
+  }
+  body .Container .Library_books-list .Library_book img, body .Container .Library_books-list .Library_new-book img {
+    height: 160px !important;
+    width: 110px !important;
+  }
+  body .Container .Library_books-list .Library_book .Library_book, body .Container .Library_books-list .Library_new-book .Library_book, body .Container .Library_books-list .Library_book .Library_new-book, body .Container .Library_books-list .Library_new-book .Library_new-book {
+    width: 50%;
+  }
+}
+body .Container .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .Container .top h1 {
+  display: flex;
+  justify-self: flex-start;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 800px) {
+  body .Container .top h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  body .Container .top img {
+    border: 1px solid red;
+    height: 100px;
+    width: 80px;
+  }
+  body .Container .top .top {
+    background-color: rebeccapurple;
+    margin-top: 50px;
+  }
+  body .Container .top .top h1 {
+    font-size: 30px;
+    margin-right: 20px;
+  }
+  body .Container .top .top .Search {
+    width: 100px;
+    height: 50px;
+  }
+}
+body .Container .top .Search {
+  width: 300px;
+  height: 46px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 100px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 10px;
+  line-height: 24px;
+  color: #aaaaaa;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */

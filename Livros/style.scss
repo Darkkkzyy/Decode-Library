@@ -1,0 +1,330 @@
+@import "../color.scss";
+@import "../Register/style.scss";
+
+body {
+  font-family: "Rubik";
+  font-style: normal;
+ .modalContainer {
+      align-items: center;
+      background: rgba(0, 0, 0, 0.75);
+      display: none;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      position: fixed;
+      width: 100%;
+
+      .modal {
+        background: #252525;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        min-width: 600px;
+        padding: 50px;
+        color: #fff;
+
+        input {
+          width: 100%;
+          height: 46px;
+          border-radius: 100px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          padding: 10px;
+        }
+
+        h1 {
+          font-size: 28px;
+          align-self: baseline;
+        }
+
+        p {
+          font-size: 20px;
+        }
+
+        .ContainerBtnVoltar {
+          display: flex;
+          justify-content: center;
+
+          .BtnVoltar {
+            all: unset;
+            background: orangered;
+            border-radius: 100px;
+            cursor: pointer;
+            font-weight: 500;
+            min-width: 168px;
+            padding: 14px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  .Container {
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid red;
+   
+    nav {
+      background-color: rgb(65, 65, 65);
+      color: rgb(165, 165, 165);
+      // vertical/horizontal
+      padding: 0 15px;
+      height: 75px;
+      display: flex !important;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+
+      .button {
+        height: 25px;
+        width: 25px;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        @media (min-width: 700px) {
+          display: none !important;
+        }
+        &:hover {
+          background-color: rgb(0, 0, 0);
+        }
+        li {
+          height: 5px;
+          width: 100%;
+          background-color: rgb(156, 156, 156) !important;
+          border-radius: 4px;
+          transition: 0.3;
+        }
+      }
+
+      .menu {
+        background: #ddd;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        right: 0;
+        padding: 15px;
+        text-align: right;
+        flex-direction: column;
+        display: none;
+        margin-right: 200px;
+        justify-content: space-between;
+        width: 40%;
+
+        @media (max-width: 700px) {
+          margin-right: 0 !important;
+          width: 100% !important;
+        }
+        @media (min-width: 700px) {
+          display: flex !important;
+          flex-direction: row;
+          position: relative;
+          top: 0;
+          padding: 0;
+          background: none;
+
+          justify-content: space-between;
+
+          li:not(:nth-last-child(1)) {
+            margin-bottom: 0;
+            margin-right: 15px;
+          }
+        }
+
+        li:not(:nth-last-child(1)) {
+          margin-bottom: 15px;
+        }
+      }
+      li {
+        list-style: none;
+        &:hover {
+          transition: 0.5;
+        }
+        a {
+          text-decoration: none;
+          font-family: "Rubik", sans-serif;
+          font-weight: 500;
+          color: white;
+        }
+        & :hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .newBookButton {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin-top: 40px;
+      @media only screen and (min-width: 800px) {
+        display: none;
+      }
+
+      @media only screen and (max-width: 800px) {
+        .contaLogin {
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          border: solid 3px white;
+          background-color: $preto;
+          color: white;
+          border-radius: 100px;
+          height: 43px;
+          width: 300px;
+          text-decoration: none;
+          padding: 10px;
+          img {
+            width: 10%;
+            background: white;
+          }
+        }
+      }
+    }
+
+    h1 {
+      font-weight: 500;
+      font-size: 60px;
+      color: #ffffff;
+    }
+
+    .Library_pagination {
+      align-items: center;
+      align-self: center;
+      cursor: pointer;
+      display: flex;
+      gap: 10px;
+      color: white;
+
+      & .Library_pagination:hover {
+        background-color: $orange;
+      }
+    }
+
+    .Library_books-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        height: 381px;
+        width: 264px;
+      }
+
+      .author {
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+      }
+
+      .price {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ff4e16;
+      }
+
+      .Library_new-book {
+        @extend .Library_book;
+        @media only screen and (max-width: 800px) {
+          display: none !important;
+        }
+
+        .addBook {
+          color: white;
+        }
+
+        .img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 3px solid white;
+        }
+      }
+
+      .Library_book {
+        border: 1px solid blue;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 15px;
+        @media only screen and (max-width: 800px) {
+          .h1 {
+            font-size: 277px;
+          }
+          img {
+            height: 160px !important;
+            width: 110px !important;
+          }
+          .Library_book {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        display: flex;
+        justify-self: flex-start;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media only screen and (max-width: 800px) {
+        h1 {
+          font-size: 30px;
+        }
+      }
+      @media only screen and (max-width: 750px) {
+        img {
+          border: 1px solid red;
+          height: 100px;
+          width: 80px;
+        }
+        .top {
+          background-color: rebeccapurple;
+          margin-top: 50px;
+          h1 {
+            font-size: 30px;
+            margin-right: 20px;
+          }
+          .Search {
+            width: 100px;
+            height: 50px;
+          }
+        }
+      }
+
+      .Search {
+        width: 300px;
+        height: 46px;
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 100px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        padding: 10px;
+        line-height: 24px;
+        color: #aaaaaa;
+        border: none;
+      }
+    }
+  }
+}

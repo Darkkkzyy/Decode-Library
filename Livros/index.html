@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@500&family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <nav>
+    <h3>Logo</h3>
+    <ul class="menu">
+      <li href="#"><a href="">Teste</a></li>
+      <li href="#"><a href="">Teste</a></li>
+      <li href="#"><a href="">Teste</a></li>
+      <li href="#"><a href="">Teste</a></li>
+    </ul>
+    <ul class="button">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </nav>
+  <body>
+    <div class="modalContainer">
+      <div class="modal">
+        <h1>Adicionar um livro</h1>
+   
+          <input class="text" type="text" placeholder="Titulo" />
+          <input class="text" type="text" placeholder="Autor" />
+          <input class="text" type="text" placeholder="Categoria" />
+          <input class="text" type="text" placeholder="Editora" />
+        <a class="ContainerBtnVoltar">
+          <button onclick="voltar()" class="BtnVoltar">Voltar</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="Container">
+        <div class="top">
+          <h1>A nossa biblioteca</h1>
+          <div class="Search_container">
+            <input
+              type="text"
+              class="Search"
+              placeholder="Pesquise um livro"
+              value=""
+            />
+          </div>
+        </div>
+        <div class="newBookButton">
+          <button
+            onclick="validate()"
+            class="contaLogin"
+            href="../Register/index.html"
+          >
+            <img src="../images/mais.png" alt="" /> Adicionar livro
+          </button>
+        </div>
+
+        <div class="Library_books-list">
+          <div class="Library_new-book">
+            <div class="img">
+              <button
+                onclick="validate()"
+                class="contaLogin"
+                href="../Register/index.html"
+              >
+                <img src="../images/mais.png" alt="" />
+              </button>
+            </div>
+
+            <p style="margin: 56px 0" class="addBook">Adicionar um livro</p>
+          </div>
+          <div id="1" class="Library_book">
+            <img src="../images/1.png" alt="War Peace" class="Library_book" />
+            <p class="title">War &amp; Peace</p>
+            <p class="author">Leo Tolstoy</p>
+            <p class="price">2€/semana</p>
+          </div>
+          <div id="1" class="Library_book">
+            <img src="../images/2.png" alt="War Peace" class="Library_book" />
+            <p class="title">War &amp; Peace</p>
+            <p class="author">Leo Tolstoy</p>
+            <p class="price">2€/semana</p>
+          </div>
+        </div>
+        <!-- <div class="Library_pagination">
+          <p id="1">1</p>
+          <p id="2">2</p>
+          <p id="3">3</p>
+          <p id="4">4</p>
+        </div> -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
