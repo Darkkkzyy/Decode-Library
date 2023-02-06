@@ -1,9 +1,6 @@
-* {
-  border: 1px solid red;
-}
-
 body {
   background-color: #252525;
+  height: 100vh;
 }
 body .BookDetailsContainer {
   align-items: center;
@@ -19,7 +16,7 @@ body .BookDetailsContainer .BookDetails {
 }
 @media only screen and (max-width: 1000px) {
   body .BookDetailsContainer .BookDetails {
-    width: 600px;
+    width: 100%;
   }
 }
 body .BookDetailsContainer .BookDetails .BookDTitle {
@@ -27,6 +24,7 @@ body .BookDetailsContainer .BookDetails .BookDTitle {
   display: flex;
   font-size: 20px;
   font-weight: 500;
+  margin-top: 25px;
 }
 @media only screen and (max-width: 1000px) {
   body .BookDetailsContainer .BookDetails .BookDTitle {
@@ -63,6 +61,16 @@ body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract {
   display: flex;
   gap: 24px;
 }
+body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookCover {
+  width: 360px;
+  height: 520px;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookCover {
+    width: 266px;
+    height: 366px;
+  }
+}
 body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookInteraction {
   color: #fff;
   align-items: flex-start;
@@ -72,6 +80,11 @@ body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookInter
   font-size: 12px;
   font-weight: 500;
   gap: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookInteraction {
+    display: none !important;
+  }
 }
 body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookInteraction .BookInteractLike {
   align-items: center;
@@ -87,12 +100,55 @@ body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContaine
   display: flex;
   flex-direction: column;
 }
-body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookDescriptionTitle {
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer {
+    width: 266px;
+  }
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookTitleIntercation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookTitleIntercation img {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookTitleIntercation img {
+    display: flex !important;
+  }
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookTitleIntercation .BookDescriptionTitle {
   color: #fff;
   font-family: "Rubik", sans-serif;
   font-size: 40px;
   font-weight: 500;
   max-width: 650px;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookTitleIntercation .BookDescriptionTitle {
+    font-size: 32px;
+  }
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract {
+    display: flex !important;
+  }
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract .BookInteractLike2,
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract .BookInteractDislike2 {
+  display: flex;
+  color: #fff;
+  padding: 5px;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract .BookInteractLike2 img,
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract .BookInteractDislike2 img {
+  margin-right: 10px;
+  height: 22px;
+  margin-top: 15px;
 }
 body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BooKDesAut {
   align-items: center;

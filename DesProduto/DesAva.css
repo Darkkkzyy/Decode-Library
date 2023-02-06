@@ -6,11 +6,60 @@
 
 body {
   background-color: #252525;
+  height: 100vh;
+}
+body .secondModal {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  flex-direction: column;
+  font-family: "Rubik", sans-serif;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 15;
+}
+body .secondModal .secModal {
+  background: #252525;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-width: 600px;
+  padding: 50px;
+  color: #fff;
+}
+body .secondModal .secModal .ModalTitle {
+  font-size: 28px;
+}
+body .secondModal .secModal .BtnOlder {
+  all: unset;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  min-width: 128px;
+}
+body .secondModal .secModal .BtnOlder .btnBack {
+  all: unset;
+  color: #fff;
+  background: orangered;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  min-width: 168px;
+  padding: 14px;
+  text-align: center;
+  justify-content: center;
+  width: fit-content;
 }
 body .modalOrder {
   align-items: center;
   background: rgba(0, 0, 0, 0.75);
-  display: flex;
+  display: none;
   flex-direction: column;
   height: 100%;
   justify-content: center;
@@ -28,6 +77,39 @@ body .modalOrder .modal {
   padding: 50px;
   width: 100%;
 }
+body .modalOrder .modal .TextRequest {
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 20px;
+  color: #fff;
+}
+body .modalOrder .modal .RequestPrice {
+  align-self: flex-end;
+  color: orangered;
+  font-weight: 500;
+  font-size: 16px;
+}
+body .modalOrder .modal .RequestPrice span {
+  font-size: 28px;
+}
+body .modalOrder .modal .ContainerButtoneRequest {
+  display: flex;
+  justify-content: center;
+}
+body .modalOrder .modal .ContainerButtoneRequest .ButtonRequest {
+  all: unset;
+  color: #fff;
+  background: orangered;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  min-width: 168px;
+  padding: 14px;
+  text-align: center;
+  justify-content: center;
+  width: fit-content;
+}
 body .modalOrder .modal .OrderTitle {
   align-items: center;
   display: flex;
@@ -35,21 +117,29 @@ body .modalOrder .modal .OrderTitle {
 }
 body .modalOrder .modal .OrderTitle h1 {
   font-size: 28px;
-  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  font-weight: bold;
+}
+body .modalOrder .modal .OrderTitle img {
+  cursor: pointer;
 }
 body .modalOrder .modal .OrderDropdown {
   display: flex !important;
   justify-content: center;
   align-self: center;
-  width: 320px;
+  width: 100%;
+  margin-top: 10px;
+}
+body .modalOrder .modal option {
+  border-radius: 20px;
 }
 body .modalOrder .modal .OrderDropdown select {
-  margin-top: 10px;
+  margin-top: 12px;
   width: 100%;
-  padding: 16px 30px 16px 15px;
+  padding: 12px 30px 15px 15px;
   border-radius: 50px;
-  font: 408 22px Arial;
-  -webkit-appearance: none;
+  font: 408 18px Arial;
   appearance: none;
   color: #616161;
   border: 1px solid #616161;
@@ -87,7 +177,7 @@ body .BookDetailsContainer .BookDetails {
 }
 @media only screen and (max-width: 1000px) {
   body .BookDetailsContainer .BookDetails {
-    width: 600px;
+    width: 100%;
   }
 }
 body .BookDetailsContainer .BookDetails .BookDTitle {
@@ -95,6 +185,7 @@ body .BookDetailsContainer .BookDetails .BookDTitle {
   display: flex;
   font-size: 20px;
   font-weight: 500;
+  margin-top: 25px;
 }
 @media only screen and (max-width: 1000px) {
   body .BookDetailsContainer .BookDetails .BookDTitle {
@@ -112,6 +203,8 @@ body .BookDetailsContainer .BookDetails .BookDTitle .BookTitleLibrary {
 body .BookDetailsContainer .BookDetails .BookDTitle .BookTitleDetails {
   color: #fff;
   display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 body .BookDetailsContainer .BookDetails .BookSContainer {
   display: flex;
@@ -129,6 +222,16 @@ body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract {
   display: flex;
   gap: 24px;
 }
+body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookCover {
+  width: 360px;
+  height: 520px;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookCover {
+    width: 266px;
+    height: 366px;
+  }
+}
 body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookInteraction {
   color: #fff;
   align-items: flex-start;
@@ -138,6 +241,11 @@ body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookInter
   font-size: 12px;
   font-weight: 500;
   gap: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookInteraction {
+    display: none !important;
+  }
 }
 body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookInteraction .BookInteractLike {
   align-items: center;
@@ -153,27 +261,72 @@ body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContaine
   display: flex;
   flex-direction: column;
 }
-body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookDescriptionTitle {
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer {
+    width: 266px;
+  }
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BtnRequest {
+  all: unset;
+  color: #fff;
+  background: orangered;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  min-width: 168px;
+  padding: 14px;
+  text-align: center;
+  justify-content: center;
+  width: fit-content;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookTitleIntercation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookTitleIntercation h1 {
+  margin-bottom: 28px;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookTitleIntercation img {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookTitleIntercation img {
+    display: flex !important;
+  }
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookTitleIntercation .BookDescriptionTitle {
   color: #fff;
   font-family: "Rubik", sans-serif;
   font-size: 40px;
   font-weight: 500;
   max-width: 650px;
-  margin-block-start: 0px;
 }
-body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .Btn {
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookTitleIntercation .BookDescriptionTitle {
+    font-size: 32px;
+  }
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract {
+    display: flex !important;
+  }
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract .BookInteractLike2,
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract .BookInteractDislike2 {
+  display: flex;
   color: #fff;
+  padding: 5px;
 }
-body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .Btn .BtnRequesitar {
-  all: unset;
-  background: orangered;
-  border-radius: 100px;
-  cursor: pointer;
-  font-weight: 500;
-  min-width: 168px;
-  padding: 14px;
-  text-align: center;
-  width: fit-content;
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract .BookInteractLike2 img,
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract .BookInteractDislike2 img {
+  margin-right: 10px;
+  height: 22px;
+  margin-top: 15px;
 }
 body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BooKDesAut {
   align-items: center;
@@ -183,8 +336,12 @@ body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContaine
   font-size: 16px;
   font-weight: 400;
 }
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BooKDesAut p {
+  margin-bottom: 28px;
+}
 body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BooKDesAut .Dot {
   margin: 10px;
+  margin-bottom: 35px;
 }
 body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BooKDesAut .SubAutTitle {
   color: rgb(170, 170, 170);
@@ -194,8 +351,10 @@ body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContaine
   color: #fff;
   font-size: 16px;
   font-weight: 400;
+  margin-bottom: 28px;
 }
 body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookPrice {
+  margin-bottom: 28px;
   color: #ff4e16;
   font-family: "Rubik", sans-serif;
   font-size: 28px;
@@ -204,6 +363,9 @@ body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContaine
 body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookDisponibilidade {
   color: #fff;
   font-weight: 500;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookDisponibilidade .BookDisponibilidadeSub {
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=DesAva.css.map */
