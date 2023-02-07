@@ -28,9 +28,14 @@ body .secondModal .secModal {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  min-width: 600px;
+  width: 600px;
   padding: 50px;
   color: #fff;
+}
+@media only screen and (max-width: 1000px) {
+  body .secondModal .secModal {
+    width: 300px;
+  }
 }
 body .secondModal .secModal .ModalTitle {
   font-size: 28px;
@@ -73,9 +78,15 @@ body .modalOrder .modal {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 900px;
+  width: 900px;
   padding: 50px;
   width: 100%;
+}
+@media only screen and (max-width: 1000px) {
+  body .modalOrder .modal {
+    width: 320px;
+    padding: 25px;
+  }
 }
 body .modalOrder .modal .TextRequest {
   font-size: 14px;
@@ -314,6 +325,10 @@ body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContaine
 @media only screen and (max-width: 1000px) {
   body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract {
     display: flex !important;
+    margin-bottom: 15px;
+  }
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract p {
+    margin-top: 15px !important;
   }
 }
 body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract .BookInteractLike2,
