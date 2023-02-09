@@ -521,7 +521,6 @@ body .modalContainer .modal .ContainerBtnVoltar .BtnVoltar {
   text-align: center;
 }
 body .Container {
-  height: 100vh;
   width: 100vw;
 }
 body .Container nav {
@@ -702,6 +701,7 @@ body .Container .Library_pagination .Library_pagination:hover {
   background-color: #FF4E16;
 }
 body .Container .Library_books-list {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

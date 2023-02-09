@@ -80,7 +80,6 @@ body .modalOrder .modal {
   gap: 20px;
   width: 900px;
   padding: 50px;
-  width: 100%;
 }
 @media only screen and (max-width: 1000px) {
   body .modalOrder .modal {
