@@ -1,125 +1,84 @@
-@import "../color.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(53, 53, 53);
+  font-family: Arial, Helvetica, sans-serif;
 
-nav {
-  background-color: $preto !important   ;
-  color: rgb(165, 165, 165);
-  // vertical/horizontal
-  padding: 0 15px;
-  height: 75px;
-  display: flex !important;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-  img {
-    width: 70px;
-    height: 40px;
-    margin-left: 50px;
-    @media (max-width: 950px) {
-      margin-left: 0;
-    }
-  }
-  .btnLogin {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid 3px white;
-    background-color: $preto;
-    color: white;
-    border-radius: 100px;
-    height: 43px;
-    width: 100px;
-    text-decoration: none;
-    padding: 10px;
-    margin-right: 100px;
-    @media (max-width: 950px) {
-      display: none !important;
-    }
-  }
-  .button {
-    height: 25px;
-    width: 25px;
+  nav {
+    background-color: rgb(65, 65, 65);
+    color: rgb(165, 165, 165);
+    // vertical/horizontal
+    padding: 0 15px;
+    height: 75px;
     display: flex !important;
-    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    cursor: pointer;
-    @media (min-width: 950px) {
-      display: none !important;
-      .btnLogin {
+    flex-direction: row;
+
+    .button {
+      height: 25px;
+      width: 25px;
+      display: flex !important;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      @media (min-width: 700px) {
         display: none !important;
       }
-    }
-    &:hover {
-      background-color: rgb(0, 0, 0);
-    }
-    li {
-      height: 5px;
-      width: 100%;
-      background-color: rgb(156, 156, 156) !important;
-      border-radius: 4px;
-      transition: 0.3;
-    }
-  }
-
-  .MenuFixe{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-
-    
-  .menu {
-    background: #ddd;
-    position: absolute;
-    top: 75px;
-    left: 0;
-    right: 0;
-    padding: 15px;
-    text-align: right;
-    flex-direction: column;
-    display: none;
-    margin-right: 200px;
-    justify-content: space-between;
-    width: 40%;
-
-    @media (max-width: 950px) {
-      margin-right: 0 !important;
-      width: 95% !important;
-    }
-    @media (min-width: 950px) {
-      display: flex !important;
-      flex-direction: row;
-      position: relative;
-      top: 5px;
-      padding: 0;
-      background: none;
-
-      justify-content: space-between;
-
-      li:not(:nth-last-child(1)) {
-        margin-bottom: 0;
-        margin-right: 15px;
+      &:hover {
+        background-color: rgb(0, 0, 0);
+      }
+      li {
+        height: 5px;
+        width: 100%;
+        background-color: rgb(156, 156, 156) !important;
+        border-radius: 4px;
+        transition: 0.3;
       }
     }
 
-    li:not(:nth-last-child(1)) {
-      margin-bottom: 15px;
+    .menu {
+      background: #ddd;
+      position: absolute;
+      top: 75px;
+      left: 0;
+      right: 0;
+      padding: 15px;
+      text-align: right;
+      flex-direction: column;
+      display: none;
+      @media (min-width: 700px) {
+        display: flex !important;
+        flex-direction: row;
+        position: relative;
+        top: 0;
+        padding: 0;
+        background: none;
+        li:not(:nth-last-child(1)) {
+          margin-bottom: 0;
+          margin-right: 15px;
+        }
+      }
+
+      li:not(:nth-last-child(1)) {
+        margin-bottom: 15px;
+      }
     }
-  }
-  li {
-    list-style: none;
-    &:hover {
-      transition: 0.5;
+    li {
+      list-style: none;
+      &:hover {
+        transition: 0.5;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+      }
+      & :hover {
+        text-decoration: underline;
+      }
     }
-    a {
-      white-space: nowrap;
-      margin-right: 30px;
-      text-decoration: none;
-      font-family: "Rubik", sans-serif;
-      font-weight: 500;
-      color: white;
-    }
-    & :hover {
-      text-decoration: underline;
-    }
-  }
   }
 }

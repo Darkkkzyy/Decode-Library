@@ -1,5 +1,15 @@
-nav {
-  background-color: #252525 !important;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(53, 53, 53);
+  font-family: Arial, Helvetica, sans-serif;
+}
+body nav {
+  background-color: rgb(65, 65, 65);
   color: rgb(165, 165, 165);
   padding: 0 15px;
   height: 75px;
@@ -8,36 +18,7 @@ nav {
   justify-content: space-between;
   flex-direction: row;
 }
-nav img {
-  width: 70px;
-  height: 40px;
-  margin-left: 50px;
-}
-@media (max-width: 950px) {
-  nav img {
-    margin-left: 0;
-  }
-}
-nav .btnLogin {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: solid 3px white;
-  background-color: #252525;
-  color: white;
-  border-radius: 100px;
-  height: 43px;
-  width: 100px;
-  text-decoration: none;
-  padding: 10px;
-  margin-right: 100px;
-}
-@media (max-width: 950px) {
-  nav .btnLogin {
-    display: none !important;
-  }
-}
-nav .button {
+body nav .button {
   height: 25px;
   width: 25px;
   display: flex !important;
@@ -45,30 +26,22 @@ nav .button {
   justify-content: space-between;
   cursor: pointer;
 }
-@media (min-width: 950px) {
-  nav .button {
-    display: none !important;
-  }
-  nav .button .btnLogin {
+@media (min-width: 700px) {
+  body nav .button {
     display: none !important;
   }
 }
-nav .button:hover {
+body nav .button:hover {
   background-color: rgb(0, 0, 0);
 }
-nav .button li {
+body nav .button li {
   height: 5px;
   width: 100%;
   background-color: rgb(156, 156, 156) !important;
   border-radius: 4px;
   transition: 0.3;
 }
-nav .MenuFixe {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-}
-nav .MenuFixe .menu {
+body nav .menu {
   background: #ddd;
   position: absolute;
   top: 75px;
@@ -78,49 +51,35 @@ nav .MenuFixe .menu {
   text-align: right;
   flex-direction: column;
   display: none;
-  margin-right: 200px;
-  justify-content: space-between;
-  width: 40%;
 }
-@media (max-width: 950px) {
-  nav .MenuFixe .menu {
-    margin-right: 0 !important;
-    width: 95% !important;
-  }
-}
-@media (min-width: 950px) {
-  nav .MenuFixe .menu {
+@media (min-width: 700px) {
+  body nav .menu {
     display: flex !important;
     flex-direction: row;
     position: relative;
-    top: 5px;
+    top: 0;
     padding: 0;
     background: none;
-    justify-content: space-between;
   }
-  nav .MenuFixe .menu li:not(:nth-last-child(1)) {
+  body nav .menu li:not(:nth-last-child(1)) {
     margin-bottom: 0;
     margin-right: 15px;
   }
 }
-nav .MenuFixe .menu li:not(:nth-last-child(1)) {
+body nav .menu li:not(:nth-last-child(1)) {
   margin-bottom: 15px;
 }
-nav .MenuFixe li {
+body nav li {
   list-style: none;
 }
-nav .MenuFixe li:hover {
+body nav li:hover {
   transition: 0.5;
 }
-nav .MenuFixe li a {
-  white-space: nowrap;
-  margin-right: 30px;
+body nav li a {
   text-decoration: none;
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
-  color: white;
+  color: rgb(0, 0, 0);
 }
-nav .MenuFixe li :hover {
+body nav li :hover {
   text-decoration: underline;
 }
 

@@ -12,28 +12,32 @@
     />
   </head>
   <nav>
-    <h3>Logo</h3>
+    <img src="../images/Logo.png" alt="">
     <ul class="menu">
-      <li href="#"><a href="">Teste</a></li>
-      <li href="#"><a href="">Teste</a></li>
-      <li href="#"><a href="">Teste</a></li>
-      <li href="#"><a href="">Teste</a></li>
+      <li><a href="../HomePage/Home.html">Home</a></li>
+      <li><a href="../Livros/index.html">Livros</a></li>
+      <li><a href="../Categories/index.html">Categorias</a></li>
+      <li><a href="../SobreNosPage/SobreNos.html">Sobre Nós</a></li>
     </ul>
     <ul class="button">
       <li></li>
       <li></li>
       <li></li>
     </ul>
+    <button class="btnLogin"><a style="text-decoration: none; color: white;" href="../Login/index.html">Login</a></button>
   </nav>
   <body>
     <div class="modalContainer">
       <div class="modal">
         <h1>Adicionar um livro</h1>
-
         <input class="text" type="text" placeholder="Titulo" />
         <input class="text" type="text" placeholder="Autor" />
         <input class="text" type="text" placeholder="Categoria" />
         <input class="text" type="text" placeholder="Editora" />
+        <form action="">
+          <label for="arquivo">Carregar imagem no seu computador</label>
+          <input type="file" name="arquivo" id="arquivo" />
+        </form>
         <a class="ContainerBtnVoltar">
           <button onclick="voltar()" class="BtnVoltar">Voltar</button>
         </a>
@@ -90,6 +94,12 @@
             <p class="price">2€/semana</p>
           </div>
         </div>
+        <!-- <div class="Library_pagination">
+          <p id="1">1</p>
+          <p id="2">2</p>
+          <p id="3">3</p>
+          <p id="4">4</p>
+        </div> -->
       </div>
     </div>
     <script src="script.js"></script>

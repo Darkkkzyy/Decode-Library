@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="DesAva.css" />
+    <link href="Rubik" ,sans-serif rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../HomePage/submit.js" defer></script>
+
+  </head>
+  <body>
+    <div class="secondModal">
+      <div class="secModal">
+          <h1 class="ModalTitle">Livro requisitado</h1>
+          <p>Requisitou o livro com sucesso.</p>
+          <div class="BtnOlder">
+          <button onclick="BackOrder()" class="btnBack">Voltar</button>
+          </div>
+      </div>
+    </div>
+    <div class="modalOrder">
+        <div class="modal">
+          <div class="OrderTitle">
+            <h1>Requesitar Livro</h1>
+            <img onclick="BackOrder()" src="../images/x-circle.png" alt="closeFigure">
+          </div>
+        <div class="OrderDropdown">
+          <select name="" id="">
+            <option value="">Quantas Semanas</option>
+            <option value="">1 semana</option>
+            <option value="">2 semanas</option>
+            <option value="">3 semanas</option>
+          </select>
+          <img src="../images/Vector.png" alt="">
+        </div>
+        <p class="TextRequest">Este livro tem o custo de 2€/semana</p>
+        <p class="RequestPrice">Total: <span>0€</span></p>
+        <div class="ContainerButtoneRequest">
+        <button  onclick="BtnRequestWeek()" class="ButtonRequest">Requisitar</button>
+        </div>
+        </div>
+      </div>
+
+      <div class="BookDetailsContainer">
+        <div class="BookDetails">
+          <div class="BookDTitle">
+            <p class="BookTitleLibrary">A nossa biblioteca</p>
+            <img src="../images/seta.png" alt="" />
+            <p class="BookTitleDetails">War & Peace</p>
+          </div>
+          <div class="BookSContainer">
+            <div class="BookInteract">
+              <img src="../images/Livro1.png" alt="BookCover" class="BookCover" />
+  
+              <div class="BookInteraction">
+                <img src="../images/heart.png" alt="BookInteractHeart" />
+                <div class="BookInteractLike">
+                  <img src="../images/Like.png" alt="BookInteractLikeee" />
+                  <p id="count" class="Like">0</p>
+                </div>
+                <div class="BookInteractDislike">
+                  <img src="../images/Dislike.png" alt="BookInteractDislikeee" />
+                  <p id="count" class="Dislike">0</p>
+                </div>
+              </div>
+            </div>
+            <div class="BookDescriptionContainer">
+              <div class="BookTitleIntercation">
+              <h1 class="BookDescriptionTitle">War & Peace </h1>  
+              <img src="../images/heart.png" alt="" class="Heart">
+              </div>
+              <div class="BooKDesAut">
+                  <p>Leo Tolstoy </p>
+                  <img src="../images/dot.png" alt="DesDot" class="Dot">
+                  <p class="SubAutTitle"> Outros</p>
+              </div>              
+              <p class="BookEditora">Editora: Oxford University Press</p>
+              <div class="ContainerInteract">
+              <div class="BookInteractLike2">
+                <img src="../images/Like.png" alt="InteractLike" />
+                <div class="InteractText">
+                <p id="count" class="Like">0</p>
+                </div>
+              </div>
+              <div class="BookInteractDislike2">
+                <img src="../images/Dislike.png" alt="InteractDislike" />
+                <p id="count" class="Dislike">0</p>
+              </div>
+              </div>
+              <h1 class="BookPrice">2€/semana</h1>
+              <div class="BtnRequestOlder">
+                <button onclick="BtnRequest()" class="BtnRequest">Requesitar</button>
+              </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

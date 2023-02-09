@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="../NotFound/NotFound.css">
+  <head>
+    <link rel="stylesheet" href="../NotFound/NotFound.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
-<body>
+    <link rel="stylesheet" href="../Categories/style.css" />
+  </head>
+  <nav>
+    <img src="../images/Logo.png" alt="">
+    <ul class="menu">
+      <li><a href="../HomePage/Home.html">Home</a></li>
+      <li><a href="../Livros/index.html">Livros</a></li>
+      <li><a href="../Categories/index.html">Categorias</a></li>
+      <li><a href="../SobreNosPage/SobreNos.html">Sobre Nós</a></li>
+    </ul>
+    <ul class="button">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <button class="btnLogin"><a style="text-decoration: none; color: white;" href="../Login/index.html">Login</a></button>
+  </nav>
+  <body>
     <div class="CategoriasContainer">
-        <div class="DetalhesDaCategoria">
-            <h1 class="Title"> Arte </h1>
-            <div class="BookNotFound">
-                <p>Estes são os livros que temos nesta categoria:</p>
+      <div class="DetalhesDaCategoria">
+        <h1 class="Title">Arte</h1>
+        <div class="BookNotFound">
+          <p>Estes são os livros que temos nesta categoria:</p>
 
-                <div class="BookNotFoundContainer">
-                    <p>Parece que não temos livros da categoria que escolheu</p>
-                    <button class="PrimaryButton">Voltar</button>
-                </div>
-            </div>
+          <div class="BookNotFoundContainer">
+            <p>Parece que não temos livros da categoria que escolheu</p>
+            <button class="PrimaryButton">Voltar</button>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+    <script src="../Categories/script.js"></script>
+  </body>
 </html>

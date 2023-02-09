@@ -1,0 +1,187 @@
+body {
+  background-color: #252525;
+  height: 100vh;
+}
+body .BookDetailsContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+body .BookDetailsContainer .BookDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0 40px 40px;
+  width: 1280px;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails {
+    width: 100%;
+  }
+}
+body .BookDetailsContainer .BookDetails .BookDTitle {
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 25px;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookDTitle {
+    justify-content: center;
+    align-items: center;
+  }
+  body .BookDetailsContainer .BookDetails .BookDTitle .BookTitleDetails {
+    flex-direction: column;
+  }
+}
+body .BookDetailsContainer .BookDetails .BookDTitle .BookTitleLibrary {
+  color: #ff4e16;
+  cursor: pointer;
+}
+body .BookDetailsContainer .BookDetails .BookDTitle .BookTitleDetails {
+  color: #fff;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer {
+  display: flex;
+  gap: 50px;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract {
+  align-items: flex-start;
+  display: flex;
+  gap: 24px;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookCover {
+  width: 360px;
+  height: 520px;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookCover {
+    width: 266px;
+    height: 366px;
+  }
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookInteraction {
+  color: #fff;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  gap: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookInteraction {
+    display: none !important;
+  }
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookInteraction .BookInteractLike {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookInteract .BookInteraction .BookInteractDislike {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer {
+    width: 266px;
+  }
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookTitleIntercation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookTitleIntercation img {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookTitleIntercation img {
+    display: flex !important;
+  }
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookTitleIntercation .BookDescriptionTitle {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  max-width: 650px;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookTitleIntercation .BookDescriptionTitle {
+    font-size: 32px;
+  }
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract {
+    display: flex !important;
+  }
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract .BookInteractLike2,
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract .BookInteractDislike2 {
+  display: flex;
+  color: #fff;
+  padding: 5px;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract .BookInteractLike2 img,
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .ContainerInteract .BookInteractDislike2 img {
+  margin-right: 10px;
+  height: 22px;
+  margin-top: 15px;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BooKDesAut {
+  align-items: center;
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BooKDesAut .Dot {
+  margin: 10px;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BooKDesAut .SubAutTitle {
+  color: rgb(170, 170, 170);
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookEditora {
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookPrice {
+  color: #ff4e16;
+  font-family: "Rubik", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookDisponibilidade {
+  color: #fff;
+  font-weight: 500;
+}
+body .BookDetailsContainer .BookDetails .BookSContainer .BookDescriptionContainer .BookDisponibilidade .BookDisponibilidadeSub {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=Des.css.map */

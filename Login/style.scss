@@ -12,7 +12,7 @@
 body {
   background-color: $preto !important   ;
   nav {
-    background-color: rgb(65, 65, 65);
+    background-color: $preto !important   ;
     color: rgb(165, 165, 165);
     // vertical/horizontal
     padding: 0 15px;
@@ -21,6 +21,45 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    img{
+      width: 70px;
+      height: 40px;
+      margin-left: 50px;
+      @media (max-width: 950px) {
+        margin-left: 0;
+      }
+    }
+    .btnLogin{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: solid 3px white;
+      background-color: $preto;
+      color: white;
+      border-radius: 100px;
+      height: 43px;
+      width: 100px;
+      text-decoration: none;
+      padding: 10px;
+      margin-right: 100px;
+      @media (max-width: 950px) {
+        display: none !important;
+      }
+    }
+    .button {
+      height: 25px;
+      width: 25px;
+      display: flex !important;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      @media (min-width: 950px) {
+        display: none !important;
+        .btnLogin{
+          display: none !important;
+        }
+      }
+    }
 
     .button {
       height: 25px;
@@ -103,7 +142,7 @@ body {
 .container {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 100vh;
   width: 100vw;
   @media only screen and (max-width: 1000px) {
@@ -124,7 +163,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 50%;
+    width: 35%;
+    border: 1px solid red;
     height: 80%;
 
     @media only screen and (max-width: 1000px) {
@@ -162,11 +202,13 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px; //espacemento entra as coluna/grades
-    width: 50%;
+    width: 35%;
     height: 80%;
+    border: 1px solid red;
 
     .inputs {
       width: 100%;
+      border: 1px solid red;
       display: flex;
       flex-direction: column;
       input {
